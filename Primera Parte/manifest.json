@@ -1,0 +1,21 @@
+{
+  "name": "Tutorial Oscapps",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "short_name": "Tutorial Oscapps",
+  "icons": {
+    "48": "img/gmail.png",
+    "128": "img/gmail128.png"
+  },
+  "description": "Tutorial Oscapps",
+    "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["jquery/jquery-2.0.3.min.js","inject.js"],
+      "css": ["inject.css"]
+    }
+  ],
+  "web_accessible_resources": [
+
+  ]
+}
