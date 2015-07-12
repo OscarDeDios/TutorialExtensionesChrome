@@ -1,0 +1,30 @@
+{
+  "name": "Gmail Word Counter",
+  "manifest_version": 2,
+  "version": "2.0.6",
+  "short_name": "Gmail Word Counter",
+  "icons": {
+    "48": "img/gmail.png",
+    "128": "img/gmail128.png"
+  },
+    "background": {
+    "scripts": ["js/background.js"]
+  },
+  "description": "Gmail Word Counter by Oscapps",
+    "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["jquery/jquery-2.0.3.min.js","js/inject.js"],
+      "css": ["css/inject.css"]
+    }
+  ],
+    "permissions": [
+      "storage"
+    ],
+    "browser_action": {
+      "default_title": "Tutorial Chrome",
+      "default_icon": "img/gmail.png",
+      "default_popup": "popup.html"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
