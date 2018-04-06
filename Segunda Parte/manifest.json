@@ -1,8 +1,8 @@
 {
-  "name": "Gmail Word Counter",
+  "name": "Gmail Letter Counter",
   "manifest_version": 2,
-  "version": "2.0.6",
-  "short_name": "Gmail Word Counter",
+  "version": "2.0.9",
+  "short_name": "Gmail Letter Counter",
   "icons": {
     "48": "img/gmail.png",
     "128": "img/gmail128.png"
@@ -10,7 +10,7 @@
     "background": {
     "scripts": ["js/background.js"]
   },
-  "description": "Gmail Word Counter by Oscapps",
+  "description": "Gmail Letter Counter by Oscapps",
     "content_scripts": [
     {
       "matches": ["https://mail.google.com/*"],

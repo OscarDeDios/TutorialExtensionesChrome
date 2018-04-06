@@ -22,7 +22,7 @@
         var numChar = $nodeTemp.text().length+1;
         var html = '<div class="contadorExt">' + numChar + '</div>';
         $('.aWQ').append(html);
-        chrome.extension.sendMessage({cuentaTexto: numChar});
+        chrome.runtime.sendMessage({cuentaTexto: numChar});
     }
 }());
 
